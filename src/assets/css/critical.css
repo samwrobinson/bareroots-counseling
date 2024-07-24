@@ -34,6 +34,9 @@
     /* centers content horizontally, set to flex-start to left align */
     align-items: flex-start;
   }
+  #hero-1949 .cs-content .cs-text {
+    font-weight: 500;
+  }
   #hero-1949 .cs-title,
   #hero-1949 .cs-text {
     margin-bottom: 1.25rem;
