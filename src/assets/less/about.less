@@ -129,7 +129,6 @@
         /* everything inside this box is in ems so we can scale it all down proportionally with a font size */
         width: 33.875em;
         height: 48.3125em;
-        display: none;
         /* prevents flexbox from squishing it */
         flex: none;
         position: relative;
@@ -247,7 +246,6 @@
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
-
     }
     #gallery .blob-grid {
         height: 100%;
@@ -294,6 +292,9 @@
         color: var(--primary); /* Adjust color as needed */
         font-size: 2rem; /* Adjust font size as needed */
         text-align: center;
+      }
+      #gallery .cs-title {
+        color: var(--primary);
       }
 }
 
@@ -395,9 +396,6 @@
       color: var(--primary); /* Adjust color as needed */
       font-size: 2rem; /* Adjust font size as needed */
       text-align: center;
-    }
-    #gallery .cs-title {
-      color: var(--primary);
     }
 }
 

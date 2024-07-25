@@ -94,7 +94,56 @@ eleventyNavigation:
     </div>
 </div>
 
-                                
+<script>
+    // Your JavaScript code here
+    const keyframesFloat1 = [
+        { transform: 'translateY(0)' },
+        { transform: 'translateY(-2rem)' },
+        { transform: 'translateY(0)' }
+    ];
+
+    const keyframesFloat2 = [
+        { transform: 'translateY(0)' },
+        { transform: 'translateY(-3rem)' },
+        { transform: 'translateY(0)' }
+    ];
+
+    const floatTiming1 = {
+        duration: 7000,
+        iterations: Infinity,
+        easing: 'ease-in-out'
+    };
+
+    const floatTiming2 = {
+        duration: 10000,
+        iterations: Infinity,
+        easing: 'ease-in-out'
+    };
+
+    const floatTiming3 = {
+        duration: 4500,
+        iterations: Infinity,
+        easing: 'ease-in-out'
+    };
+
+    document.addEventListener('DOMContentLoaded', () => {
+        const blob1 = document.querySelector('#blob1');
+        const blob2 = document.querySelector('#blob2');
+        const blob3 = document.querySelector('#blob3');
+
+        if (blob1) {
+            blob1.animate(keyframesFloat1, floatTiming1);
+        }
+
+        if (blob2) {
+            blob2.animate(keyframesFloat2, floatTiming2);
+        }
+
+        if (blob3) {
+            blob3.animate(keyframesFloat1, floatTiming3);
+        }
+    });
+</script>                                
 
     {% include 'components/cta.html' %}
 
