@@ -235,7 +235,7 @@
 @media only screen and (min-width: 0rem) {
   #gallery {
     display: flex;
-    height: 50vh;
+    height: auto;
     justify-content: center;
     flex-direction: column;
     align-items: center;
@@ -246,42 +246,141 @@
     background-repeat: no-repeat;
     background-size: cover;
   }
-  #gallery .cs-picture {
-    width: 100%;
+  #gallery .blob-grid {
     height: 100%;
-    display: block;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(12, 1fr);
   }
-  #gallery .cs-picture img {
+  #gallery .blob-grid #blob1 {
+    grid-column: 1 / 10;
+    grid-row: 4 / 9;
+    height: fit-content;
+  }
+  #gallery .blob-grid #blob2 {
+    grid-column: 6 / 11;
+    grid-row: 8 / 12;
+    height: fit-content;
+  }
+  #gallery .blob-grid #blob3 {
+    grid-column: 5 / 13;
+    grid-row: 1 / 5;
+    height: fit-content;
+  }
+  #gallery .blob-grid .image-group {
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    height: 50%;
+  }
+  #gallery .blob-grid .image-group h2 {
+    font-size: 0.1rem;
+  }
+  #gallery .blob-grid .image-group img {
     width: 100%;
     height: auto;
-    object-fit: cover;
-    z-index: -50;
-    position: relative;
+  }
+  #gallery .blob-grid .image-group h2 {
+    position: absolute;
+    font-family: "Shrikhand", sans-serif;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+    color: var(--primary);
+    /* Adjust color as needed */
+    font-size: 2rem;
+    /* Adjust font size as needed */
+    text-align: center;
   }
 }
 /* Tablet - 650px */
 @media only screen and (min-width: 40.625rem) {
   #gallery {
     display: flex;
+    height: 100vh;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    background-color: var(--htmlBodyColor);
+    padding: var(--sectionPadding);
+  }
+  #gallery .blob-grid {
+    height: 90%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+  }
+  #gallery .blob-grid #blob1 {
+    grid-column: 1 / 4;
+    grid-row: 1 / 5;
+    height: fit-content;
+  }
+  #gallery .blob-grid #blob2 {
+    grid-column: 5 / 8;
+    grid-row: 4 / 10;
+    height: fit-content;
+  }
+  #gallery .blob-grid #blob3 {
+    grid-column: 9 / 13;
+    grid-row: 1 / 5;
+    height: fit-content;
+  }
+  #gallery .blob-grid .image-group {
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    height: 50%;
+  }
+  #gallery .blob-grid .image-group img {
+    width: 100%;
+    height: auto;
+  }
+  #gallery .blob-grid .image-group h2 {
+    position: absolute;
+    font-family: "Shrikhand", sans-serif;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+    color: var(--primary);
+    /* Adjust color as needed */
+    font-size: 2rem;
+    /* Adjust font size as needed */
+    text-align: center;
+  }
+}
+/* Desktop - 1024px */
+@media only screen and (min-width: 64rem) {
+  #gallery {
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 60vh;
+    height: auto;
   }
   #gallery .blob-grid {
-    height: auto;
     width: 80%;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    gap: 1rem;
-    margin-bottom: 3rem;
+    grid-template-rows: none;
+  }
+  #gallery .blob-grid #blob1,
+  #gallery .blob-grid #blob2,
+  #gallery .blob-grid #blob3 {
+    grid-column: span 4;
+    grid-row: auto;
+    /* Reset grid-row to auto */
+    height: auto;
+    /* Reset height to auto */
   }
   #gallery .blob-grid .image-group {
     grid-column: span 4;
     position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    height: 100%;
   }
   #gallery .blob-grid .image-group img {
     width: 100%;
@@ -302,6 +401,5 @@
   }
   #gallery .cs-title {
     color: var(--primary);
-    margin-top: 3rem;
   }
 }
