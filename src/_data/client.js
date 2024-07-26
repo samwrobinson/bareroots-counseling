@@ -1,15 +1,14 @@
 module.exports = {
-    "name": "Code Stitch Web Designs",
-    "email": "help@codestitch.app",
-    "phoneForTel": "555-779-4407",
-    "phoneFormatted": "(555) 779-4407",
+    "name": "Bareroots Counseling",
+    "email": "moxietcraig@gmail.com",
+    "phoneForTel": "678-315-5908",
+    "phoneFormatted": "(678) 315-5908",
     "address": {
         "lineOne": "First Address Line",
         "lineTwo": "Second Address Line",
-        "city": "Denver",
-        "state": "CO",
-        "zip": "80206",
-        "mapLink": "https://goo.gl/maps/UAQn4vuGDiwv7DV39"
+        "city": "Waterbury",
+        "state": "VT",
+        "zip": "05671",
     },
     "socials": {
         "facebook": "https://www.facebook.com/",

@@ -208,6 +208,7 @@
 /* Tablet - 768px */
 @media only screen and (min-width: 48rem) {
   #contact-1388 .cs-container {
+    width: 90%;
     max-width: 80rem;
     flex-direction: row;
     justify-content: space-between;

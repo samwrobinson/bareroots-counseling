@@ -1038,10 +1038,9 @@ html {
   }
   #meet-team-1370 .cs-card-group {
     margin: auto;
-    display: flex;
   }
   #meet-team-1370 .cs-item {
-    grid-column: span 6;
+    grid-column: span 10;
   }
   #meet-team-1370 svg {
     height: 100%;
@@ -1097,7 +1096,7 @@ html {
     align-items: center;
     position: relative;
     padding: var(--sectionPadding);
-    background-image: url(/assets/images/Bareroots-4.jpg);
+    background-image: url(/assets/images/full-screen-moxie.webp);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -1117,7 +1116,7 @@ html {
   #gallery-570 .cs-title {
     position: absolute;
     top: 20%;
-    left: 50%;
+    left: 45%;
     z-index: 50;
     color: var(--secondary);
   }
@@ -1128,6 +1127,10 @@ html {
     flex-direction: row;
     height: 70vh;
     background-position: center bottom;
+  }
+  #gallery-570 .cs-title {
+    top: 20%;
+    left: 50%;
   }
 }
 /*-- -------------------------- -->
