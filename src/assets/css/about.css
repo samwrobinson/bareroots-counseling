@@ -187,6 +187,7 @@
   #content-page-713 .cs-container {
     flex-direction: row;
     align-items: flex-start;
+    width: 80%;
   }
   #content-page-713 .cs-image-group {
     display: block;
@@ -368,7 +369,7 @@
     width: 80%;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: none;
+    grid-template-rows: 1fr;
   }
   #gallery .blob-grid #blob1,
   #gallery .blob-grid #blob2,
@@ -387,6 +388,8 @@
   #gallery .blob-grid .image-group img {
     width: 100%;
     height: auto;
+    z-index: -10;
+    position: relative;
   }
   #gallery .blob-grid .image-group h2 {
     position: absolute;
