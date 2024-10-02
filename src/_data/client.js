@@ -4,8 +4,8 @@ module.exports = {
     "phoneForTel": "678-315-5908",
     "phoneFormatted": "(678) 315-5908",
     "address": {
-        "lineOne": "First Address Line",
-        "lineTwo": "Second Address Line",
+        "lineOne": "65 South",
+        "lineTwo": "Main Street",
         "city": "Waterbury",
         "state": "VT",
         "zip": "05671",
